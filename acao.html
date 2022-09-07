@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Games</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+    
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="logo"><h1>JS Games</h1></div> 
+        <div class="pesquisa">
+            <input type="text" id="caixaTxt" placeholder="Pesquisar jogo...">
+            <div class="botoes">
+                <button>
+                    <a id="lupa" href="#">
+                    <img id="imgLupa" src="imagens/search-claro.svg" alt="lupa icon">
+                    </a>
+                </button>
+                <button id="botaoTema" type="button">
+                    <img id="imgTema" src="imagens/tema-claro.svg" alt="tema">
+                </button>
+            </div>
+        </div>   
+    </header>
+    <nav class="menu">
+        <span id="burguer" class="material-icons">menu</span>
+        <ul id="ulMenu">
+            <li>
+                <a href="./index.html" target="_self" rel="prev"><div class="txt">Casa</div>
+                <div class="borda"></div>
+                </a>
+            </li>
+            <li>
+                <a class="ativado" href="#" target="_self" rel="next"><div class="txt">Ação</div>
+                <div class="borda"></div>
+                </a>
+            </li>
+            <li>
+                <a href="./aventura.html" target="_self" rel="next"><div class="txt">Aventura</div>
+                <div class="borda"></div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main class="principal">
+        <section class="games">
+            <h1 class="titulo-principal">Jogos de Ação.</h1>
+            <!-- FAR CRY 6 -->
+            <div class="game">
+                <a href="#" rel="next">
+                    <img src="./imagens/far-cry-6/capa-p.jpg" alt="Capa do jogo far cry 5">
+                    <h2>Far Cry 6</h2>
+                    <p>R$ 249,99</p>
+                </a>
+            </div>
+            <!-- FORTNITE -->
+            <div class="game">
+                <a href="#" rel="next">
+                    <img src="./imagens/fortnite/capa-p.jpg" alt="Capa do fortnite">
+                    <h2>Fortnite</h2>
+                    <p class="gratis">Grátis</p>
+                </a>
+            </div>
+            <!-- GTA 5 -->
+            <div class="game">
+                <a href="#" rel="next">
+                    <img src="./imagens/gta-5/capa-p.jpg" alt="Capa do GTA 5">
+                    <h2>GTA 5</h2>
+                    <p>R$ 69,99</p>
+                </a>
+            </div>
+            <!-- VALORANT -->
+            <div class="game">
+                <a href="#" rel="next">
+                <img src="./imagens/valorant/capa-p.jpg" alt="Capa do Valorant">
+                <h2>Valorant</h2>
+                <p class="gratis">Grátis</p>
+            </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="https://github.com/Dhyigo" target="_blank" rel="external" hreflang="es">&copy;Diego Silva</a>
+    </footer>
+    <script src="scritps/script.js"></script>
+</body>
+</html>

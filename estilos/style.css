@@ -1,0 +1,282 @@
+@charset "UTF-8";
+
+:root {
+    --cor0: #EFD81D;
+    --cor1: #FFFFFF;
+    --cor2: #F9F9F9;
+    --cor3: #E5E5E5;
+    --cor4: #b6b6b6;
+    --cor4m: #636363;
+    --cor5: #030303;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    min-width: 0;
+}
+
+*::selection {
+    background-color: transparent;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    background-color: var(--cor1);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.cabecalho {
+    max-width: 100vw;
+    padding: 5px 10px;
+    padding-bottom: 20px;
+    
+}
+
+
+.cabecalho .logo {
+    color: var(--cor0);
+}
+
+.cabecalho .logo h1 {
+    padding: 20px 5px;
+    padding-bottom: 25px;
+    font-size: 2rem;
+}
+
+.cabecalho .pesquisa {
+    display: flex;
+    gap: 10px;
+    padding: 0 10px;
+}
+.cabecalho .pesquisa .botoes {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#caixaTxt {
+    display: inline-block;
+    background-color: var(--cor1);
+    color: var(--cor5);
+    height: 2rem;
+    width: 250px;
+    max-width: 400px;
+    padding: 10px;
+    border: 2px solid var(--cor4);
+    border-radius: 10px;
+}
+
+#caixaTxt::placeholder {
+    color: var(--cor4);
+}
+
+
+#caixaTxt:focus {
+    border-color: var(--cor0);
+    outline: none;
+    transition: all .2s;
+}
+
+
+.cabecalho button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.cabecalho button img {
+    opacity: 0.5;
+}
+
+.cabecalho button:hover img {
+    opacity: 0.7;
+}
+
+
+
+#burguer {
+    display: block;
+    padding: 5px;
+    text-align: center;
+    background-color: var(--cor4);
+    color: var(--cor1);
+    border: 1px solid var(--cor4);
+    cursor: pointer;
+}
+
+#burguer:hover {
+    background-color: var(--cor1);
+    color: var(--cor4);
+    border: 1px solid var(--cor4);
+    transition: all .3s;
+}
+.menu {
+    background-color: var(--cor2);
+    text-align: center;
+    position: sticky;
+    top: 0%;
+}
+
+.menu ul {
+    display: none;
+    list-style-type: none;
+}
+
+
+
+.menu li a .txt {
+    padding: 10px;
+    color: var(--cor4m);
+    font-weight: bold;
+    
+}
+
+.menu li .borda {
+    height: 2px;
+    width: 0px;
+    background-color: var(--cor2);
+    margin: auto;
+    border-radius: 2px;
+    transition: 0.8s;
+}
+
+.menu li a.ativado .txt {
+    color: var(--cor0);
+}
+
+.menu li a:hover:not(.ativado) .txt {
+    color: var(--cor4);
+
+}
+
+.menu li a:hover .borda {
+    width: 10%;
+    background-color: var(--cor0);
+}
+
+.principal {
+    width: 100%;
+    background-color: var(--cor2);
+    padding: 10px 5px;
+}
+
+.principal .titulo-principal {
+    color: var(--cor4);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.principal .games {
+    padding: 20px 10px;
+    border-radius: 5px;
+    background-color: var(--cor1);
+}
+
+.principal .games .game {
+    background-color: var(--cor2);
+    padding: 10px;
+    padding-top: 15px;
+    text-align: center;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 30px;
+    max-width: 310px;
+
+}
+
+.principal .games .game:hover {
+    background-color: var(--cor3);
+    transition: all .5s;
+    
+}
+
+@media (max-height: 690px) {
+    main.principal .games .game {
+        width: 70%;
+    }
+}
+
+.games .game img {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 95%;
+}
+.game a {
+    color: var(--cor4m);
+}
+
+.game a h2:hover, .game a p {
+    transition: color .3s;
+}
+
+.game a h2:hover, .game a p:hover:not(p.gratis) {
+    color: var(--cor4);
+}
+
+.game a p {
+    font-weight: bold;
+    color: var(--cor4m);
+    padding-top: 10px;
+}
+
+.game a p.gratis {
+    color: green;
+
+}
+
+.game a p.gratis:hover {
+    color:  rgb(0, 255, 0);
+}
+
+footer {
+    text-align: center;
+    
+    
+}
+
+footer a {  
+    border-top: 2px solid var(--cor4);
+    display: block;
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    padding: 10px;
+    background-color: var(--cor4m);
+    color: var(--cor1);
+    font-weight: bold;
+}
+
+footer a:hover {
+    background-color: var(--cor1);
+    color: var(--cor4);
+    
+}
+
+
+/* Animação */
+.menu ul {
+    animation-name: entrar;
+    animation-duration: .600s;
+}
+
+
+@keyframes entrar {
+    from {
+        display: block;
+        position: relative;
+        left: 100%;
+        border-radius: 50px;
+    }
+
+    to {
+        position: relative;
+        left: 0%;
+    }
+}
