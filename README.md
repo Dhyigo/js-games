@@ -4,7 +4,5 @@
 #
 Simulador de loja de games, usando o conceito de MOBILE FIRST.<br>
 Game store simulator, using the concept of MOBILE FIRST.<br>
-<a href="https://dhyigo.github.io/js-games/">Clique aqui.</a>
+<a href="https://dhyigo.github.io/js-games/">Clique aqui</a> para acessar o site.
 #
-#### !Aviso! Apenas a versão mobile está pronta!
-#### !Warning! Only the mobile version is done!
