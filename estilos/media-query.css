@@ -70,7 +70,8 @@
 }
 
 .principal .games {
-    display: block;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     padding-top: 100px;
     margin: auto;
     position: relative;
@@ -85,10 +86,5 @@
     transform: translate(-50%);
 }
 
-
-.principal .games {  /* config grid */
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-}
 
 
