@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+#burguer {
+    display: none;
+}
+.cabecalho {
+    margin: auto;
+    max-width: 1500px;
+    
+}
+.cabecalho .pesquisa {
+    margin: 20px 20px;
+    margin-top: 0%;
+    justify-content: flex-end;
+}
+
+.cabecalho .pesquisa .botoes {
+    width: 90px;
+
+}
+
+@media screen and (min-width: 1255px) {
+    .cabecalho .pesquisa .botoes {
+        width: 200px;
+    
+    } 
+}
+
+#caixaTxt {
+    width: 300px;
+    font-size: 1em;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1400px;
+    margin: auto;
+    animation-name: none;
+}
+
+.menu ul li {
+    display: inline-block;
+    
+    
+}
+
+.menu li a {
+    display: inline-block;
+    position: relative;
+}
+
+.menu li a .borda {
+    position: absolute;
+    left: 50%;
+
+    transform: translate(-50%);
+    
+}
+
+.menu li a.ativado .borda {
+    width: 70px;
+    
+}
+
+.principal {   
+    max-width: 1200px;
+    margin: auto;
+
+}
+
+.principal .games {
+    display: block;
+    padding-top: 100px;
+    margin: auto;
+    position: relative;
+
+}
+
+.principal .titulo-principal {
+    font-size: 1.6rem;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+.principal .games {  /* config grid */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+

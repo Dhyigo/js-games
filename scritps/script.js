@@ -10,11 +10,21 @@ let berguer = document.querySelector('#burguer')
 let botaoLupa = document.querySelector('#lupa')
 let botaoTema = document.querySelector('#botaoTema')
 
-
+window.addEventListener('resize', mudouTamanho)
 berguer.addEventListener('click', mostrarMenu)
 botaoTema.addEventListener('click', mudarTema)
 botaoLupa.addEventListener('click', pesquisar)
 
+function mudouTamanho() {
+    console.log(window.innerWidth)
+    let menu = document.querySelector('ul#ulMenu')
+
+    if (window.innerWidth >= 768) {
+       menu.style.display = 'flex'
+    } else {
+        menu.style.display = 'none'
+    }
+}
 function pesquisar() {
     let pags = ['acao', 'aventura', 'index']
 
