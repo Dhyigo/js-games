@@ -49,13 +49,14 @@
     position: relative;
 }
 
-.menu li a .borda {
+body .menu li a .borda {
     position: absolute;
     left: 50%;
-    transform: translate(-50%);  
+    transform: translate(-50%, 0);
+    bottom: 0%;  
 }
 
-.menu li a.ativado .borda {
+body .menu li a.ativado .borda {
     width: 70px;  
 }
 
