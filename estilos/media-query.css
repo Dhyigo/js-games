@@ -41,8 +41,7 @@
 
 .menu ul li {
     display: inline-block;
-    
-    
+      
 }
 
 .menu li a {
@@ -53,29 +52,17 @@
 .menu li a .borda {
     position: absolute;
     left: 50%;
-
-    transform: translate(-50%);
-    
+    transform: translate(-50%);  
 }
 
 .menu li a.ativado .borda {
-    width: 70px;
-    
+    width: 70px;  
 }
 
 .principal {   
     max-width: 1200px;
     margin: auto;
-
-}
-
-.principal .games {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    padding-top: 100px;
-    margin: auto;
     position: relative;
-
 }
 
 .principal .titulo-principal {
@@ -84,4 +71,11 @@
     top: 20px;
     left: 50%;
     transform: translate(-50%);
+}
+
+.principal .games {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    padding-top: 100px;
+    margin: auto;
 }

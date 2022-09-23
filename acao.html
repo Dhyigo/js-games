@@ -14,12 +14,20 @@
         <div class="logo"><h1>JS Games</h1></div> 
         <div class="pesquisa">
             <input type="text" id="caixaTxt" placeholder="Pesquisar jogo...">
+            <datalist id="sugestoes">
+                <option value="Ação"></option>
+                <option value="Aventura"></option>
+                <option value="Casa"></option>
+                <option value="Far Cry 6"></option>
+                <option value="Fortnite"></option>
+                <option value="GTA 5"></option>
+                <option value="Sonic Origins"></option>
+                <option value="Valorant"></option>
+            </datalist>
             <div class="botoes">
-                <button>
-                    <a id="lupa" href="#">
-                    <img id="imgLupa" src="imagens/search-claro.svg" alt="lupa icon">
-                    </a>
-                </button>
+                <a id="lupa" href="#">
+                <img id="imgLupa" src="imagens/search-claro.svg" alt="lupa icon">
+                </a>
                 <button id="botaoTema" type="button">
                     <img id="imgTema" src="imagens/tema-claro.svg" alt="tema">
                 </button>
@@ -46,9 +54,9 @@
             </li>
         </ul>
     </nav>
-    <main class="principal">        
+    <main class="principal">
+        <h1 class="titulo-principal">Jogos de Ação.</h1>        
         <section class="games">
-            <h1 class="titulo-principal">Jogos de Ação.</h1>
             <!-- FAR CRY 6 -->
             <div class="game">
                 <a href="#" rel="next">

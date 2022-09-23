@@ -7,19 +7,26 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css" media="screen and (min-width: 768px)">
-    
 </head>
-<body>
+<body onload="mudarTema()">
     <header class="cabecalho">
         <div class="logo"><h1>JS Games</h1></div> 
         <div class="pesquisa">
-            <input type="search" id="caixaTxt" placeholder="Pesquisar jogo...">
-            <div class="botoes">
-                <button>
-                    <a id="lupa" href="#">
-                    <img id="imgLupa" src="imagens/search-claro.svg" alt="lupa icon">
-                    </a>
-                </button>
+            <input type="search" id="caixaTxt" placeholder="Pesquisar jogo..." list="sugestoes">
+            <datalist id="sugestoes">
+                <option value="Ação"></option>
+                <option value="Aventura"></option>
+                <option value="Casa"></option>
+                <option value="Far Cry 6"></option>
+                <option value="Fortnite"></option>
+                <option value="GTA 5"></option>
+                <option value="Sonic Origins"></option>
+                <option value="Valorant"></option>
+            </datalist>
+            <div class="botoes">  
+                <a id="lupa" href="#">
+                <img id="imgLupa" src="imagens/search-claro.svg" alt="lupa icon">
+                </a> 
                 <button id="botaoTema" type="button">
                     <img id="imgTema" src="imagens/tema-claro.svg" alt="tema">
                 </button>

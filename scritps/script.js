@@ -25,18 +25,23 @@ function mudouTamanho() {
         menu.style.display = 'none'
     }
 }
+
+// pesquisar
+
 function pesquisar() {
     let pags = ['acao', 'aventura', 'index']
-
-    if (input.value == 'casa') {
-        input.value = 'index'
-    } 
+    let pag = input.value.toLowerCase()
+    if (pag == 'casa') {
+        pag = 'index'
+    } else if (pag == 'ação') {
+        pag = 'acao'  
+    }
     
-    if (pags.indexOf(input.value) == -1) {
+    if (pags.indexOf(pag) == -1) {
         alert('[ERRO] Página não existe!')
 
     } else {
-        botaoLupa.href = `./${input.value}.html`
+        botaoLupa.href = `./${pag}.html`
     }
     value.value = ''
 }
